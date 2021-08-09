@@ -1,4 +1,4 @@
-/* GLOBAL STYLES START */
+/* GLOBAL STYLES */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,17 +9,16 @@
   --primary-color: #d8bf76;
   --secondary-color: black;
   --tertiary-color: white;
-  --quaternary-color: #696969;
+  --quaternary-color: lightgray;
 }
-/* GLOBAL STYLES END */
 
- /* BODY STYLES START */
+ /* BODY STYLES */
  body {
   font-family: Helvetica, Arial, sans-serif;
   background-color:var(--quaternary-color)
 }
 
-/* HEADER & NAVIGATION STYLES START */
+/* HEADER & NAVIGATION STYLES */
 header {
   padding: 20px 35px;
   background-color: var(--secondary-color);
@@ -79,14 +78,49 @@ header nav div a:hover {
   border-radius: 15px;
   text-shadow:none;
 }
-/* HEADER & NAVIGATION STYLES END */
 
-/* STYLE ALL SECTION TAGS */
+/* HERO STYLES */
+.hero {
+  padding: 5%;
+  background-image: url('../images/hero-background.jpeg');
+  background-position: 80%;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+figure span {
+  align: bottom right;
+  padding: 10px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+figure span h2 {
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+figure span h4 {
+  font-style: italic;
+  line-height: 1.4;
+
+/* MAIN STYLES */
+main section div {
+padding-left: 20px;
+width: 70%;
+float: right;
+border-left: 3px solid var(--secondary-color);
+}
+
 section {
   padding: 50px; 
 }
 
-.section-title {
+section h2 {
   font-size: 48px;
   padding-bottom: 20px;
   width: 30%;
@@ -96,13 +130,4 @@ section {
   float: left;
   padding-right: 15px;
 }
-/* END ALL SECTION TAGS */ 
 
-/* STYLE BOX SECTION CLASSES */
-main section div {
-padding-left: 20px;
-width: 70%;
-float: right;
-border-left: 3px solid var(--secondary-color);
-}
-/* END BOX SECTION CLASSES */

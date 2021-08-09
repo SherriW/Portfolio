@@ -21,6 +21,18 @@
   line-height: 1.5;
 }
 
+/* Titles */
+h1,
+h2,
+h3 {
+  margin: 0
+}
+
+/* Non-Titles */
+p (
+  msrgin: -;
+)
+
 /* HEADER & NAV*/
 header {
   padding: 20px 35px;

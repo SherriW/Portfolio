@@ -1,10 +1,9 @@
-/* GLOBAL STYLES */
+/* GLOBAL CSS */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
+/* JS Root Colors */
 :root {
   --primary-color: #d8bf76;
   --secondary-color: black;
@@ -12,13 +11,17 @@
   --quaternary-color: lightgray;
 }
 
- /* BODY STYLES */
+ /* BODY */
  body {
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color)
   font-family: Helvetica, Arial, sans-serif;
   background-color:var(--quaternary-color)
+  line-height: 1.5;
 }
 
-/* HEADER & NAVIGATION STYLES */
+/* HEADER & NAV*/
 header {
   padding: 20px 35px;
   background-color: var(--secondary-color);

@@ -46,6 +46,7 @@ header {
   background-color: var(--dark);
   box-shadow: 0, 5px 35px lightslategrey;
   /* box-shadow: offset x, offset y, blur radius, colors */
+  padding: 15px 6% 15px 0;
 }
 
 h1 {
@@ -53,87 +54,148 @@ h1 {
   padding: 5px 1% 5px 6%;
   /* top, right, bottom, left */
   /* viewport width = vw*/
-
-}
-
-h1 a {
-  color: var(--dark);
-  line-height: 1;
   font-size: 4vw;
-  text-decoration: none;
-}
-
-header nav {
-  margin: 7px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  color: var(--primary);
+  line-height: 1;
 }
 
 nav {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
 }
 
 nav a {
-  padding: 10px 15px;
+  text-decoration: none;
+  padding: 5px 10px;
   color: var(--secondary);
-  font-weight: 200;
-  font-size: 1.55vw;
-  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-size: 1.4rem;
+  margin-right: 10px;
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
 }
 
-/* HERO STYLES */
+nav a:hover {
+  background-size: 100% 100%;
+  color: var(--primary);
+}
+
+nav a:last-child {
+margin-right: 0;
+}
+
+/* MAIN */
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+/* HERO BANNER*/
 .hero {
-  padding: 5%;
-  background-image: url('../images/hero-background.jpeg');
-  background-position: 80%;
-  background-attachment: fixed;
+  padding: 2% 6%;
+  background-image: url('../images/hero-background.jpeg'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-position: center;
+  background-blend-mode: soft-light;
   background-size: cover;
+  min-height: 30vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-figure span {
-  align: bottom right;
-  padding: 10px;
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-}
-
-figure span h2 {
-  font-size: 25px;
-  line-height: 1.2;
-}
-
-figure span h4 {
-  font-style: italic;
-  line-height: 1.4;
-
-/* MAIN STYLES */
-main section div {
-padding-left: 20px;
-width: 70%;
-float: right;
-border-left: 3px solid var(--secondary-color);
-}
-
-section {
-  padding: 50px; 
-}
-
-section h2 {
-  font-size: 48px;
-  padding-bottom: 20px;
-  width: 30%;
-  margin: 0 auto 35px auto;
-  color: var(--secondary-color);
+  justify-content: flex-end;
+  align-items: flex-end;
+    /* vertical alignment: align-items */
   text-align: right;
-  float: left;
+}
+
+.hero div {
+flex: 0 0 90%;
+  /* grow, shrink, basis */
+}
+
+.hero h2 {
+  font-size: 2.3rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 5px 10px;
+  display: inline;
+  background-color: var(--secondary);
+  color: var(--tertiary);
+}
+
+/* Main-Wrap */
+.main-wrap {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.box-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
   padding-right: 15px;
+  border-right: 4px solid var(--primary);
+  font-size: 4vw;
+  line-height: 1.1;
+}
+
+.box-section > div {
+  flex: 0 0 70%;
+}
+
+.box-section p {
+  margin-bottom: 20px;
+}
+
+.flex-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-items {
+  border: 5px solid var(--secondary);
+  background-color: var(--primary);
+  color: var(--tertiary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+.box-items:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.box-items:hover {
+  background-color: black;
+
+}
+
+.box-items div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.box-items h3 {
+  font-size: 1.6rem;
 }

@@ -1,23 +1,25 @@
 /* GLOBAL CSS */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding 0;
 }
 
 /* JS Root Colors */
 :root {
-  --primary-color: #d8bf76;
-  --secondary-color: black;
-  --tertiary-color: white;
-  --quaternary-color: lightgray;
+  --primary: lightgrey;
+  --secondary: #81C1C2;
+  --tertiary: #495F7B;
+  --dark: #25272E;
+  --light: #E8E8F4;
 }
 
  /* BODY */
  body {
-  margin: 0;
-  padding: 0;
-  color: var(--primary-color)
-  font-family: Helvetica, Arial, sans-serif;
-  background-color:var(--quaternary-color)
+  color: var(--light);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--secondary);
+  background-color: var(--light);
   line-height: 1.5;
 }
 
@@ -25,31 +27,31 @@
 h1,
 h2,
 h3 {
-  margin: 0
+  margin: 0;
 }
 
 /* Non-Titles */
-p (
-  msrgin: -;
-)
+p {
+  margin: 0;
+}
 
 /* HEADER & NAV*/
 header {
-  padding: 20px 35px;
-  background-color: var(--secondary-color);
-  background-position: 80%;
-  background-attachment:fixed;
-  background-size: cover;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  background-color: var(--tertiary);
+  box-shadow: 0, 5px 35px lightslategrey;
+  /* box-shadow: offset x, offset y, blur radius, colors */
 }
 
 header h1 {
-  font-weight: bold;
-  margin: 0;
-  font-size: 20px;
+color: var(--tertiary);
+background-color: var (--secondary)
+padding: 5pm 1% 5px 6%;
+        /*top, right, bottom, left */
 }
 
 header a {
@@ -145,4 +147,3 @@ section h2 {
   float: left;
   padding-right: 15px;
 }
-

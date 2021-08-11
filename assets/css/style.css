@@ -200,7 +200,7 @@ flex: 0 0 90%;
   font-size: 1.6rem;
 }
 
-.contact address {
+.box-section address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -208,7 +208,7 @@ flex: 0 0 90%;
   height: 100%;
 }
 
-.contact address a {
+.box-section address a {
   color: var(--tertiary);
   padding: 5px;
   text-decoration: none;
@@ -222,7 +222,7 @@ flex: 0 0 90%;
   display: inline-block;
 }
 
-.contact address a:hover {
+.box-section address a:hover {
   background-size: 100% 80%;
   color: var(--secondary);
 }

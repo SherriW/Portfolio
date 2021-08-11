@@ -1,24 +1,25 @@
 /* GLOBAL CSS */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding 0;
 }
 
 /* JS Root Colors */
 :root {
-  --primary: lightgrey;
+  /* Primary - H2; Secondary - links; Tertiary - body font*/
+  /* Dark - header; Light - body background*/
+  --primary: #4c5974;
   --secondary: #81C1C2;
   --tertiary: #495F7B;
-  --dark: #25272E;
+  --dark: #30333c;
   --light: #E8E8F4;
 }
 
  /* BODY */
  body {
-  color: var(--light);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: var(--secondary);
+  margin: 0;
+  padding 0;
+  font-family: 'Helvetica', Arial, sans-serif;
+  color: var(--tertiary);
   background-color: var(--light);
   line-height: 1.5;
 }
@@ -42,29 +43,24 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--tertiary);
+  background-color: var(--dark);
   box-shadow: 0, 5px 35px lightslategrey;
   /* box-shadow: offset x, offset y, blur radius, colors */
 }
 
-header h1 {
-color: var(--tertiary);
-background-color: var (--secondary)
-padding: 5pm 1% 5px 6%;
-        /*top, right, bottom, left */
+h1 {
+  background-color: var(--secondary);
+  padding: 5px 1% 5px 6%;
+  /* top, right, bottom, left */
+  /* viewport width = vw*/
+
 }
 
-header a {
-  padding: 10px; 15px;
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-header h1 a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  border-radius: 15px;
-  text-shadow:none;
+h1 a {
+  color: var(--dark);
+  line-height: 1;
+  font-size: 4vw;
+  text-decoration: none;
 }
 
 header nav {
@@ -74,7 +70,7 @@ header nav {
   justify-content: space-between;
 }
 
-header nav div {
+nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -82,18 +78,12 @@ header nav div {
   list-style: none;
 }
 
-header nav div a {
+nav a {
   padding: 10px 15px;
+  color: var(--secondary);
   font-weight: 200;
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-header nav div a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  border-radius: 15px;
-  text-shadow:none;
 }
 
 /* HERO STYLES */

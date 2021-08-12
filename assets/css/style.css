@@ -93,7 +93,7 @@ main {
   margin-bottom: 45px;
 }
 
-/* HERO BANNER*/
+/* HERO*/
 .hero {
   padding: 2% 6%;
   background-image: url('../images/hero-background.jpeg'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
@@ -248,7 +248,7 @@ flex: 0 0 90%;
   background-image: url("../images/run-buddy.png");
 }
 
-/* media queries */
+/* media */
 @media screen and (max-width: 900 px) {
   header {
     padding: 0 0 10px 0;

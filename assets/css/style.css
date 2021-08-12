@@ -229,6 +229,7 @@ flex: 0 0 90%;
 /* portfolio images */
 .refactor {
   background-image: url("../images/Code-Refactor-952x514.jpg");
+  background-repeat: no-repeat;
 }
 
 .led {
@@ -246,3 +247,58 @@ flex: 0 0 90%;
 .run {
   background-image: url("../images/run-buddy.png");
 }
+
+/* media queries */
+@media screen and (max-width: 900 px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .box-section > h2,
+  .box-section > div {
+    flex: 0 0 100%;
+  }
+
+  .box-section >h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .box-section address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  }

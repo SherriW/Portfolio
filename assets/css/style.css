@@ -242,4 +242,7 @@ flex: 0 0 90%;
 .pastel {
   background-image: url("../images/puzzle-blue-pastel.jpeg");
 }
- 
+
+.run {
+  background-image: url("../images/run-buddy.png");
+}

@@ -69,7 +69,7 @@ nav a {
   text-decoration: none;
   padding: 5px 10px;
   color: var(--secondary);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-right: 10px;
   background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
   background-repeat: no-repeat;
@@ -108,19 +108,25 @@ main {
   text-align: right;
 }
 
-.hero div {
-  flex: 0 1 90%;
-  /* grow, shrink, basis */
-}
-
 .hero h2 {
-  font-size: 2.3rem;
+  font-size: 1.4rem;
   line-height: 1.2;
   margin: 0;
   padding: 5px 10px;
   display: inline;
   background-color: var(--secondary);
   color: var(--dark);
+}
+
+.hero h2 span {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.hero div {
+  flex: 0 1 90%;
+  /* grow, shrink, basis */
 }
 
 /* Main-Wrap */
@@ -182,8 +188,8 @@ main {
 }
 
 .box-items:first-child {
-  min-height: 400px;
-  flex-basis: 100%;
+  flex-basis: 100%;  
+  min-height: 150px;
 }
 
 .box-items:hover {

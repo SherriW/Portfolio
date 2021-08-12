@@ -55,7 +55,7 @@ h1 {
   /* top, right, bottom, left */
   /* viewport width = vw*/
   font-size: 4vw;
-  color: var(--primary);
+  color: var(--dark);
   line-height: 1;
 }
 
@@ -120,7 +120,7 @@ flex: 0 0 90%;
   padding: 5px 10px;
   display: inline;
   background-color: var(--secondary);
-  color: var(--tertiary);
+  color: var(--dark);
 }
 
 /* Main-Wrap */
@@ -211,7 +211,6 @@ flex: 0 0 90%;
 .box-section address a {
   color: var(--tertiary);
   padding: 5px;
-  text-decoration: none;
   font-size: 1.3rem;
   background-image: lineare-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
   background-repeat: no repeat;
@@ -226,3 +225,21 @@ flex: 0 0 90%;
   background-size: 100% 80%;
   color: var(--secondary);
 }
+
+/* portfolio images */
+.refactor {
+  background-image: url("../images/Code-Refactor-952x514.jpg");
+}
+
+.led {
+  background-image: url("../images/led-wall-blue.jpeg")
+}
+
+.calc {
+  background-image: url("../images/calculator.jpeg")
+}
+
+.pastel {
+  background-image: url("../images/puzzle-blue-pastel.jpeg");
+}
+ 

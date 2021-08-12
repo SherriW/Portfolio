@@ -109,7 +109,7 @@ main {
 }
 
 .hero div {
-flex: 0 0 90%;
+  flex: 0 1 90%;
   /* grow, shrink, basis */
 }
 

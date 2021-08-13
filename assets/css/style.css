@@ -107,6 +107,9 @@ main {
     /* vertical alignment: align-items */
   text-align: right;
 }
+.hero img {
+  align-items: center;
+}
 
 .hero h2 {
   font-size: 1.4rem;
@@ -206,7 +209,7 @@ main {
   font-size: 1.6rem;
 }
 
-.box-section address {
+.box-section div address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -214,28 +217,31 @@ main {
   height: 100%;
 }
 
-.box-section address a {
-  color: var(--tertiary);
+.box-section div address a {
+  text-decoration: none;
   padding: 5px;
+  color: var(--tertiary);
   font-size: 1.3rem;
-  background-image: lineare-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
-  background-repeat: no repeat;
+  font-style: normal;
+  margin: 0 0.2rem 0.1rem;
+  /* margin-right: 10px; */
+  background-image: linear-gradient(270deg, var(--tertiary) 0%, var(--tertiary) 100%);
+  background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
   transition: all 0.25s ease-in;
-  margin: 0 0.2rem 0.1rem;
   display: inline-block;
 }
 
-.box-section address a:hover {
+.box-section div address a:hover {
   background-size: 100% 80%;
   color: var(--secondary);
+
 }
 
 /* portfolio images */
 .refactor {
   background-image: url("../images/Code-Refactor-952x514.jpg");
-  background-repeat: no-repeat;
 }
 
 .led {
@@ -303,7 +309,7 @@ main {
     text-align: center;
   }
 
-  .box-section address {
+  .box-section div address {
     flex-direction: column;
     align-items: flex-start;
   }

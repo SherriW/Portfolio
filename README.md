@@ -9,7 +9,7 @@ Site includes a photo and information about Sherri Winslow, Full-Stack Web Devel
 N/A
 
 ## Visuals
- ![image](./assets/images.png) 
+ ![image](./assets/images/portfolio-screenshot.png) 
 
 ## Installation
 Code was created with Visual Studio Code and HomeBrew.

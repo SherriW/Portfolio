@@ -210,7 +210,7 @@ main {
   font-size: 1.6rem;
 }
 
-.box-section div address {
+.contact address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -218,7 +218,7 @@ main {
   height: 100%;
 }
 
-.box-section div address a {
+.contact address a {
   text-decoration: none;
   padding: 5px;
   color: var(--tertiary);
@@ -234,7 +234,7 @@ main {
   display: inline-block;
 }
 
-.box-section div address a:hover {
+.contact address a:hover {
   background-size: 100% 80%;
   color: var(--secondary);
 
@@ -310,7 +310,7 @@ main {
     text-align: center;
   }
 
-  .box-section div address {
+  .contact address {
     flex-direction: column;
     align-items: flex-start;
   }

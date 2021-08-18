@@ -314,4 +314,8 @@ main {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .contact address a {
+    font-size: 15px;
+  }
   }

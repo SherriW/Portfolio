@@ -17,7 +17,7 @@
  /* BODY */
  body {
   margin: 0;
-  padding 0;
+  padding: 0;
   font-family: 'Helvetica', Arial, sans-serif;
   color: var(--tertiary);
   background-color: var(--light);
@@ -296,6 +296,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  
   .box-items,
   .box-items:first-child {
     flex-basis: 100%;
@@ -312,11 +313,11 @@ main {
   }
 
   .hero h2 {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .hero h2 span {
-    font-size; 12px;
+    font-size: 12px;
   }
 
   .contact address {

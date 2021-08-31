@@ -1,16 +1,19 @@
 # Portfolio
 Portfolio for Sherri Winslow, Full-Stack Web Developer
 ## Description
-Site includes a photo and information about Sherri Winslow, Full-Stack Web Developer and provides examples of her work for your review. This site will open in the browser and features dynamically updated HTML and CSS.  The site is optimized to meet accessibility standards.  Links, in the Header/Navigation Bar will take you to the various sections on the page, including About Me, Portfolio, and Contact Sections.  A Resume link is provided and connects to a .pdf file of Sherri Winslow's Resume.  The Portfolio includes the name of the project, primary methods, and a clickable image that will take you to the published site, or a coming soon page (for future projects or projects under development).  The Contact Me section provides links to various contact methods, including email, LinkedIn, and others.  
+Site includes a photo and information about Sherri Winslow, Full-Stack Web Developer and provides examples of her work for your review. This site will open in the browser and features dynamically updated HTML and CSS.  The site is optimized to meet accessibility standards and responsive design.  Links, in the Header/Navigation Bar will take you to the various sections on the page, including About Me, Portfolio, and Contact Sections.  A Resume link is provided and connects to a .pdf file of Sherri Winslow's Resume.  The Portfolio includes the name of the project, primary methods, and a clickable image that will take you to the published site, or a coming soon page (for future projects or projects under development).  The Contact Me section provides links to various contact methods, including email, LinkedIn, and others.  
 
-## Badges
-N/A
+## Built With
+* HTML
+* CSS
 
+## Website
+https://sherriw.github.io/Portfolio/
 ## Visuals
  ![image](./assets/images/portfolio-screenshot.png) 
 
 ## Installation
-Code was created with Visual Studio Code and HomeBrew.
+Code was created with Visual Studio Code and HomeBrew. Git was used for Development and deployment through GitHub/GitHub Pages.
 
 ## Usage
 Portfolio and Educational purposes.

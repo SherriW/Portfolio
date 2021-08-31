@@ -122,6 +122,10 @@ main {
   color: var(--dark);
 }
 
+.break {
+  display: none;
+}
+
 .hero h2 span {
   font-style: italic;
   font-size: 1.2rem;
@@ -192,7 +196,7 @@ main {
 }
 
 .box-items:first-child {
-  flex-basis: 100%;  
+  flex-basis: 100%;
   min-height: 400px;
 }
 
@@ -260,9 +264,10 @@ main {
   background-image: url("../images/run-buddy.png");
 }
 
-/* media */
-@media screen and (max-width: 900 px) {
-  header {
+/* media queries start */
+@media screen and (max-width: 768px) {
+
+  header, header nav {
     padding: 0 0 10px 0;
     justify-content: center;
     text-align: center;
@@ -270,61 +275,101 @@ main {
 
   header h1 {
     width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 10vw;
+    padding: 5 px;  
+    margin-bottom: 18px;
+    font-size: 5vw;
   }
 
-  header nav {
-    justify-content: center;
-  }
-
-  .box-section > h2,
-  .box-section > div {
-    flex: 0 0 100%;
-  }
-
-  .box-section >h2 {
-    border-right: none;
-    border-bottom: 4px solid var(--primary);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 7vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  
-  .box-items,
-  .box-items:first-child {
-    flex-basis: 100%;
-  }
-
-  .box-items:first-child {
-    min-height: 150px;
+  header nav a {
+    margin: 0 10px;
+    font-size: 2vw;
   }
 
   .hero {
-    min-height: 21vh;
-    justify-content: center;
-    text-align: center;
+    min-height: 15vh;
   }
 
   .hero h2 {
-    font-size: 15px;
+    display: block;
+    font-size: 1.0rem;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .break{
+    display: block;
   }
 
   .hero h2 span {
-    font-size: 12px;
+    font-size: .8rem;
+    align-items: center;
   }
 
-  .box-section address {
+  .box-section {
     flex-direction: column;
-    align-items: flex-start;
+  }
+
+  .flex-items {
+    align-items: center;
+  }
+
+  .flex-item h3 {
+    font-size: 1.0rem;
+  }
+  .flex-item span {
+    font-size: .8rem;
+  }
+
+  .box-section h2 {
+    text-align: center;
+    border-bottom: 4px solid var(--primary);
+    border-right: none;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 7vw;
+  }
+
+  .box-items:first-child {
+    flex-basis: 100%;  
+    min-height: 200px;
+  }
+
+  .box-section {
+    align-items: center;
   }
 
   .box-section address a {
-    font-size: 15px;
+    font-size: 1.2rem;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  nav a {
+  font-size: 2vw;
+  }
+
+  nav a:last-child {
+  margin-right: 0;
+  }
+  /* .hero {
+    min-height: 15vh;
+  } */
+
+  .hero h2 {
+    display: block;
+    font-size: 1.0rem;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .break{
+    display: block;
+  }
+
+  .hero h2 span {
+    font-size: .8rem;
+    align-items: center;
   }
   }

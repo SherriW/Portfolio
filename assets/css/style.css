@@ -110,6 +110,7 @@ main {
 }
 .hero img {
   align-items: center;
+  box-shadow: 10px 10px 5px #888888;
 }
 
 .hero h2 {
@@ -120,6 +121,7 @@ main {
   display: inline;
   background-color: var(--secondary);
   color: var(--dark);
+  box-shadow: 10px 10px 5px #888888;
 }
 
 .break {
